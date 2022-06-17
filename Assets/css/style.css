@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-  padding: 60px;
+  padding: 30px;
   text-align: left;
   background: #13293d;
   color: #fff;
@@ -16,11 +16,14 @@ h1 {
 }
 
 img {
-  width: 20%;
-  border: #13293d;
+	border: #13293d;
   border-radius:180px;
   border-spacing: 20px;
-  border: 7px ridge #13293d;  
+  border: 7px ridge #13293d; 
+}
+
+#pic {
+  width: 20%;
   position: absolute; top: 0; right: 0; 
   max-width:260px
 }
@@ -28,6 +31,7 @@ img {
 
 nav {
   display: flex;
+  text-align: center;
   background-color: #d8a47f;
 }
 
@@ -48,12 +52,6 @@ main {
   display: flex;
 }
 
-aside {
- \\ flex: 30%;
-  background-color: #b9c6ae;
-  padding: 20px;
-  flex-wrap: wrap;
-}
 
 section {
   flex: 70%;
@@ -82,6 +80,42 @@ footer {
   justify-content: center;
 }
 
+#projects {
+  margin-top: 8em;
+  text-align: center;
+
+}
+
+#tiles {
+  display: flex;
+  /*to distribute spacing  */
+  justify-content: space-around;
+  /* to break to the next line if space is not enough */
+  flex-wrap: wrap;
+}
+
+#tiles a {
+  margin: 20px 20px 20px 20px;
+}
+
+.project-tile {
+  height: 200px;
+  width: 400px;
+}
+
+#projects a:link {
+  text-decoration: none;
+  color: #0000a0;
+  font-size: 20px;
+}
+
+#projects a:visited {
+  color: #0080ff;
+}
+
+#projects p {
+  font-weight: bold;
+}
 
 
 /* Image Placeholders */
@@ -94,13 +128,7 @@ footer {
 }
 
 /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
-@media screen and (max-width:100%) {
-  main,
-  nav,
-  .product {
-    flex-direction: column;
-  }
-}
+
 /* Tablets - header changes color */
 @media screen and (max-width: 992px) {
 
