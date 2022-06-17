@@ -16,18 +16,19 @@ h1 {
 }
 
 img {
-	border: #13293d;
+  width: 20%;
+  border: #13293d;
   border-radius:180px;
   border-spacing: 20px;
-  border: 7px ridge #13293d; 
+  border: 7px ridge #13293d;  
 }
 
-#pic {
+.pic {
   width: 20%;
   position: absolute; top: 0; right: 0; 
-  max-width:260px
+  max-width:260px;
+ 
 }
-
 
 nav {
   display: flex;
@@ -46,6 +47,7 @@ nav a {
 nav p {
   padding: 14px 20px;
   text-decoration: none;
+  text-align: center;
 }
 
 main {
